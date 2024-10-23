@@ -1,9 +1,15 @@
+/**
+ * PayPal payment strategy
+ */
 package ucu.edu.ua.flower.store.payment;
 
 import java.util.List;
 
 import ucu.edu.ua.flower.store.flowers.Item;
 
+/**
+ * PayPal payment strategy
+ */
 public class PayPalPaymentStrategy implements Payment {
     private String name;
     private String description;
@@ -20,7 +26,7 @@ public class PayPalPaymentStrategy implements Payment {
     }
 
     @Override
-    public double pay(List<Item> items) {
+    public double pay(final List<Item> items) {
         double price = 0;
         for (Item item: items) {
             price += item.getPrice();
@@ -29,5 +35,4 @@ public class PayPalPaymentStrategy implements Payment {
         paid = true;
         return price;
     }
-    
 }
