@@ -154,6 +154,14 @@
 
         <module name="RedundantImport"/>
         <module name="UnusedImports"/>
+
+
+        <!-- =========================================================================== -->
+        <!-- Javadoc comments                                                            -->
+        <!-- http://checkstyle.sourceforge.net/config_javadoc.html                       -->
+        <!-- =========================================================================== -->
+
+
         <!-- =========================================================================== -->
         <!-- Metrics                                                                     -->
         <!-- http://checkstyle.sourceforge.net/config_metrics.html                       -->
